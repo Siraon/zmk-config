@@ -16,6 +16,20 @@
 };
 
 / {
+    combos {
+        compatible = "zmk,combos";
+
+        tab {
+            bindings = <&kp TAB>;
+            key-positions = <15 16>;
+        };
+
+        exit {
+            bindings = <&kp LA(F4)>;
+            key-positions = <31 32>;
+        };
+    };
+
     keymap {
         compatible = "zmk,keymap";
 
@@ -27,10 +41,10 @@
             //                    | GUI | LWR | SPC |   | ENT | RSE  | ALT |
 
             bindings = <
-&kp ESC    &kp Q  &kp W  &kp E               &kp R   &kp T        &kp Y  &kp U  &kp I      &kp O    &kp P     &kp BSPC
-&kp LCTRL  &kp A  &kp S  &kp D               &kp F   &kp G        &kp H  &kp J  &kp K      &kp L    &kp SEMI  &kp ENTER
-&kp TAB    &kp Z  &kp X  &kp C               &kp V   &kp B        &kp N  &kp M  &kp COMMA  &kp DOT  &kp FSLH  &kp RIGHT_SHIFT
-                         &mt LEFT_ALT MINUS  &tog 1  &kp SPACE    &mo 1  &mo 2  &tog 3
+&kp ESC         &kp Q  &kp W  &kp E      &kp R   &kp T        &kp Y  &kp U  &kp I              &kp O    &kp P     &kp BSPC
+&kp LCTRL       &kp A  &kp S  &kp D      &kp F   &kp G        &kp H  &kp J  &kp K              &kp L    &kp SEMI  &kp ENTER
+&kp LEFT_SHIFT  &kp Z  &kp X  &kp C      &kp V   &kp B        &kp N  &kp M  &kp COMMA          &kp DOT  &kp FSLH  &kp RIGHT_SHIFT
+                              &kp MINUS  &tog 1  &kp SPACE    &mo 1  &mo 2  &kp RS(RIGHT_ALT)
             >;
         };
 
@@ -61,15 +75,6 @@
 &bt BT_CLR       &bt BT_SEL 0     &bt BT_SEL 1     &bt BT_SEL 2     &bt BT_SEL 3     &bt BT_SEL 4    &trans     &trans  &trans  &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &trans
 &rgb_ug RGB_TOG  &rgb_ug RGB_EFF  &rgb_ug RGB_HUI  &rgb_ug RGB_BRD  &rgb_ug RGB_BRI  &trans          &trans     &trans  &trans  &trans            &trans             &trans
                                                    &kp LGUI         &trans           &kp SPACE       &kp SPACE  &trans  &trans
-            >;
-        };
-
-        layer_3 {
-            bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans    &kp N7        &kp N8        &kp N9        &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &kp NUMBER_4  &kp NUMBER_5  &kp NUMBER_6  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &trans  &trans  &trans
-                        &trans  &trans  &trans    &kp N0        &trans        &trans
             >;
         };
     };
