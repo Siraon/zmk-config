@@ -33,6 +33,11 @@
             bindings = <&kp LA(TAB)>;
             key-positions = <19 20>;
         };
+
+        ye {
+            bindings = <&kp LS(P)>;
+            key-positions = <9 10>;
+        };
     };
 
     keymap {
