@@ -26,17 +26,22 @@
 
         exit {
             bindings = <&kp LA(F4)>;
-            key-positions = <31 32>;
+            key-positions = <0 1>;
         };
 
         tab {
             bindings = <&kp TAB>;
-            key-positions = <19 20>;
+            key-positions = <12 13>;
         };
 
         ye {
             bindings = <&kp LS(P)>;
             key-positions = <9 10>;
+        };
+
+        kp_B {
+            bindings = <&kp B>;
+            key-positions = <30 31>;
         };
     };
 
