@@ -48,6 +48,11 @@
             bindings = <&kp F2>;
             key-positions = <2 3>;
         };
+
+        celar {
+            bindings = <&bt BT_CLR_ALL>;
+            key-positions = <0 5 38>;
+        };
     };
 
     keymap {
