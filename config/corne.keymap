@@ -71,7 +71,7 @@
 
         alt-tab {
             bindings = <&kp LA(TAB)>;
-            key-positions = <12 13>;
+            key-positions = <12 13 14>;
         };
     };
 
