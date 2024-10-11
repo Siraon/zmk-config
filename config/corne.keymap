@@ -51,7 +51,27 @@
 
         celar {
             bindings = <&bt BT_CLR_ALL>;
-            key-positions = <0 5 38>;
+            key-positions = <0 24 12>;
+        };
+
+        ctrl-c {
+            bindings = <&kp LC(C)>;
+            key-positions = <26 27>;
+        };
+
+        ctrl-x {
+            bindings = <&kp LC(X)>;
+            key-positions = <26 25>;
+        };
+
+        ctrl-v {
+            bindings = <&kp LC(V)>;
+            key-positions = <28 27>;
+        };
+
+        alt-tab {
+            bindings = <&kp LA(TAB)>;
+            key-positions = <12 13>;
         };
     };
 
