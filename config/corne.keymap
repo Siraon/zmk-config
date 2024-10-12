@@ -31,7 +31,7 @@
 
         tab {
             bindings = <&kp TAB>;
-            key-positions = <12 13>;
+            key-positions = <37 38>;
         };
 
         ye {
@@ -67,6 +67,11 @@
         ctrl-v {
             bindings = <&kp LC(V)>;
             key-positions = <28 27>;
+        };
+
+        ctrl_A {
+            bindings = <&kp LC(A)>;
+            key-positions = <12 13>;
         };
     };
 
