@@ -68,11 +68,6 @@
             bindings = <&kp LC(V)>;
             key-positions = <28 27>;
         };
-
-        alt-tab {
-            bindings = <&kp LA(TAB)>;
-            key-positions = <12 13 14>;
-        };
     };
 
     keymap {
@@ -101,10 +96,10 @@
             //                    | GUI |     | SPC |   | ENT |     | ALT |
 
             bindings = <
-&kp TILDE  &kp N1  &kp N2  &kp N3  &kp N4  &kp N5    &kp N6    &kp N7         &kp N8       &kp N9     &kp N0          &kp BSPC
-&trans     &trans  &trans  &trans  &trans  &trans    &kp LEFT  &kp DOWN       &kp UP       &kp RIGHT  &kp APOSTROPHE  &trans
-&trans     &trans  &trans  &trans  &trans  &trans    &kp HOME  &kp PAGE_DOWN  &kp PAGE_UP  &kp END    &trans          &trans
-                           &trans  &trans  &trans    &trans    &trans         &trans
+&kp TILDE  &kp N1  &kp N2  &kp N3    &kp N4  &kp N5    &kp N6    &kp N7         &kp N8       &kp N9     &kp N0          &kp BSPC
+&trans     &trans  &trans  &trans    &trans  &trans    &kp LEFT  &kp DOWN       &kp UP       &kp RIGHT  &kp APOSTROPHE  &trans
+&trans     &trans  &trans  &trans    &trans  &trans    &kp HOME  &kp PAGE_DOWN  &kp PAGE_UP  &kp END    &trans          &trans
+                           &kp PLUS  &trans  &trans    &trans    &trans         &trans
             >;
         };
 
